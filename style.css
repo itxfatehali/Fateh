@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+         
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page-1{
+    min-height: 100vh;
+    width: 100%;
+background-color: #EFEAE3;
+
+      
+}
+.page-2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(73, 46, 46);
+}
+.page-3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: yellow;
+}
+.page-4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+nav{
+ padding-inline: 3.5vw;
+    height: 140px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+nav>img{
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+}
+.img-hover img{
+    position: absolute;
+    top: 0vw;
+    height: 140px;
+    opacity: 0;
+
+    cursor: pointer;
+    border-radius: 30px;
+left: 3vw;
+    width: 140px;
+    -webkit-transition: ease-in-out .2s;
+    -o-transition: ease-in-out .2s;
+    transition: ease-in-out .2s;
+}
+.nav-1 a{
+   text-decoration: none;
+   color: black;
+   font-size: 1.2vw;
+ font-family: 'Poppins';
+}
+
+.nav-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+
+}
+.nav-inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+   display: none;
+}
+.nav-plus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7px;
+height: 30px;
+width: 30px;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    cursor: pointer;
+    padding-left: 1vw;
+}
+.bar-1{
+    height: 1px;
+width: 30px;
+background-color: black;
+-webkit-transition: width .2s;
+-o-transition: width .2s;
+transition: width .2s;
+}
+.bar-2{
+
+    height: 1px;
+    background-color: black;
+width: 30px;
+-webkit-transition: width .2s;
+-o-transition: width .2s;
+transition: width .2s;
+}
+.nav-plus:hover{
+    gap: 5px;
+  .bar-1 {
+    width: 20px;
+  }
+  .bar-2 {
+    width: 42px;
+  }
+}
+.menu{
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0vw;
+    left: 0vw;
+    background-color: #ffffff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 10;
+    padding-right: 6vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    overflow: hidden;
+    display: none;
+}
+.menu-list{
+
+font-family: 'Montserrat';
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+position: absolute;
+right: 6vw;
+top: 4vw;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+.menu-list a{
+font-size: 3vw;
+color:black;
+text-decoration: none;
+}
+.menu-icon {
+  font-size: 3vw;
+  color: black;
+  position: absolute;
+  left: 1vw;
+  top: 1vw;
+  font-weight: 100;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.hero{
+    height: 50%;
+    width: 100%;
+   font-family: 'Montserrat';
+   padding: 3vw 2.5vw;
+}
+
+.hero>h1 {
+ font-size: 5vw;
+}
+.content-hero {
+  padding-top: 2vw;
+}
+.content-hero>h1 {
+  font-size: 5.5vw;
+  font-family: 'Roboto';
+  letter-spacing: 4px;
+
+}
+.one-content {
+    height: 100px;
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.one-content video{
+height: 100%;
+width: 100%;
+border-radius: 100%;
+}
+.one-content>h1 {
+  font-size:5.5vw;
+  letter-spacing: 4px;
+  font-family: 'Roboto';
+}
+.content-hero>p{
+    text-align: end;
+font-family: 'Poppins';
+
+}
+.hero img{
+    position: absolute;
+    right: 4vw;
+    top: 13vw;
+}
